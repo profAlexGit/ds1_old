@@ -1,0 +1,121 @@
+.contacts
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 127px
+  &__title
+    color: #232323
+  &__card
+    background: url(../img/back-contacts.jpg) no-repeat
+    background-size: cover
+    margin-top: 79px
+    display: flex
+    width: 100%
+    &--block
+      flex-basis: 50vw
+.maps
+  iframe
+    width: 50vw
+    margin-bottom: -3px
+.information
+  display: flex
+  flex-direction: column
+  margin-left: 204px
+  margin-top: 130px
+  &__desc
+    font-size: 17px
+    font-weight: 500
+    line-height: 181.9%
+    letter-spacing: 0.04em
+    margin-bottom: 31px
+    max-width: 386px
+    position: relative
+  &__address
+    &::before
+      content: ''
+      position: absolute
+      background: url('../img/address.svg') no-repeat
+      width: 40px
+      height: 40px
+      left: -120px
+      top: 12px
+  &__phone
+    &::before
+      content: ''
+      position: absolute
+      background: url('../img/contacts-phone.svg') no-repeat
+      background-size: contain
+      width: 40px
+      height: 40px
+      left: -120px
+      bottom: 5px
+  &__mail
+    &::before
+      content: ''
+      position: absolute
+      background: url('../img/mail.png') no-repeat
+      background-size: contain
+      width: 40px
+      height: 40px
+      left: -118px
+      bottom: 0
+.feedback
+  display: flex
+  justify-content: center
+  text-align: center
+  padding-bottom: 115px
+  &__title
+    margin-top: 81px
+    margin-bottom: 75px
+    color: #E40000
+  &__card
+    display: flex
+    justify-content: space-around
+.director
+  margin-left: 88px
+  &__img
+    max-width: 198px
+  &__name
+    max-width: 212px
+    font-size: 16px
+    font-weight: 500
+    margin-top: 30px
+    letter-spacing: 0.04em
+    line-height: 20px
+    color: #000000
+.form
+  border: 1px solid #C6C6C6
+  border-radius: 12px
+  padding: 59px 52px 0 55px
+  color: #000000
+  &-block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 34px
+    align-items: flex-end
+  &-label
+    font-size: 17px
+    font-weight: 500
+    letter-spacing: 0.04em
+    margin-right: 9px
+  &-input
+    border: 0
+    border-bottom: 2px solid #9E9E9E
+    width: 351px
+    opacity: 0.5
+  &-button
+    background: #E40000
+    border-radius: 20px
+    border: #E40000 1px solid
+    color: #ffffff
+    letter-spacing: 0.04em
+    font-size: 16px
+    font-weight: 600
+    padding: 10px 28px
+    cursor: pointer
+    transition: 0.4s
+    &:hover
+      background: #ffffff
+      color: #E40000
+    &--margin
+      margin-top: 89px

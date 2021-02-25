@@ -1,0 +1,72 @@
+.portfolio
+  display: flex
+  justify-content: center
+  padding: 126px 0 155px 0
+  text-align: center
+  &__title
+    color: #232323
+  &__button
+    margin-top: 55px
+    margin-bottom: 10px
+    text-align: left
+  &__btn
+    text-transform: lowercase
+    border: 1px solid #E40000
+    color: #e40000
+    background: transparent
+    line-height: 158.4%
+    border-radius: 14px
+    padding: 5px 14px
+    margin-right: 16px
+    cursor: pointer
+    transition: background 0.5s
+    transition: color 0.6s
+    &--active
+      background: #e40000
+      color: #ffffff
+    &:hover
+      background: #e40000
+      color: #ffffff
+    &:focus
+      outline: none
+.project
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &__card
+    flex-basis: 49.45%
+    margin-bottom: 10px
+    &:nth-child(5n+3), &:nth-child(5n+4), &:nth-child(5n)
+      flex-basis: 32.65%
+      height: 50%
+.category
+  &-service
+    padding: 15px 14px 18px 12px
+    border-radius: 14px
+    background: #E1E1E1
+    display: none
+    grid-template-rows: 50% 50%
+    grid-template-columns: 28% 31% 30% 19%
+    margin-bottom: 10px
+  &-grade
+    padding: 15px 14px 18px 12px
+    background: #E1E1E1
+    border-radius: 14px
+    display: none
+    grid-template-rows: 50% 50%
+    grid-template-columns: 25% 30% 23% 17% 10%
+    margin-bottom: 10px
+  &-active
+    display: grid
+  &__description
+    text-transform: lowercase
+    text-align: left
+    &:nth-child(-n+4)
+      margin-bottom: 15px
+    a
+      color: #232323
+      cursor: pointer
+      &:hover
+        color: #e40000
+.hidden
+  display: none
