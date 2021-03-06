@@ -360,6 +360,7 @@ body {
 
 .container {
   width: 1170px;
+  max-width: 90%;
 }
 .container-flex {
   display: flex;
@@ -1444,6 +1445,9 @@ img {
   position: relative;
   text-align: left;
   display: flex;
+  flex: 1;
+  gap: 40px;
+  max-width: 25%;
   flex-direction: column;
   color: #232323;
 }
@@ -1455,11 +1459,6 @@ img {
   position: absolute;
   left: -29px;
   top: 30px;
-}
-.service__card:first-child {
-  margin-left: 11px;
-  margin-right: 35px;
-  min-width: 315px;
 }
 .service__card:first-child::after {
   content: "";
@@ -1494,9 +1493,6 @@ img {
   left: -25px;
   top: 60px;
 }
-.service__card:last-child {
-  margin-left: 40px;
-}
 .service__card:last-child::before {
   left: -27px;
 }
@@ -1514,6 +1510,7 @@ img {
   margin-top: 40px;
   margin-bottom: 70px;
   display: flex;
+  gap: 40px;
 }
 
 .project {
@@ -1643,7 +1640,7 @@ img {
 }
 @media screen and (max-width: 1190px) {
   .object {
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 0;
   }
 
@@ -1651,7 +1648,7 @@ img {
     align-items: center;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 100px;
+    max-width: 50%;
   }
   .service__card::before {
     display: none;
@@ -1864,6 +1861,10 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .service__card {
+    max-width: 100%;
+  }
+
   .project-image {
     margin-top: 90px;
   }

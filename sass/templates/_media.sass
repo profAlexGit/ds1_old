@@ -34,14 +34,15 @@
         top: 100px
 @media screen and (max-width: 1190px)
   .object
-    justify-content: center
+    justify-content: space-between
     margin-bottom: 0
   .service
     &__card
       align-items: center
       margin-left: 0
       margin-right: 0
-      margin-top: 100px
+      max-width: 50%
+      //margin-top: 100px
       &::before
         display: none
       &:first-child
@@ -214,6 +215,9 @@
     &-content
       padding-right: 20px
 @media screen and (max-width: 768px)
+  .service
+    &__card
+      max-width: 100%
   .project
     &-image
       margin-top: 90px
