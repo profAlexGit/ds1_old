@@ -969,7 +969,8 @@ img {
 }
 
 .company-title {
-  color: #232323;
+  background: url("../img/back-brand.jpg") top 10% right 80%;
+  color: #ffffff;
   padding: 127px 0 43px 0;
   text-align: center;
 }
