@@ -1,21 +1,160 @@
 .contacts
+  background: url(../img/back-contacts.jpg) no-repeat
+  background-size: cover
   display: flex
   flex-direction: column
   align-items: center
-  padding-top: 127px
+  padding-top: 120px
+  .breadcrumbs
+    a, span
+      color: #FFFFFF
   &__title
-    color: #232323
+    color: #FFFFFF
+    padding: 30px 0
   &__card
     background: url(../img/back-contacts.jpg) no-repeat
     background-size: cover
-    margin-top: 79px
     display: flex
     width: 100%
     &--block
       flex-basis: 50vw
+    &__social
+      display: flex
+      justify-content: flex-start
+      a
+        &:not(:last-child)
+          margin-right: 30px
+
+.contacts_bg
+  background: url(../img/back-contacts.jpg) no-repeat
+  background-size: cover
+  width: 100vw
+  padding-bottom: 48px
+.contacts_container
+  display: flex
+  flex-wrap: wrap
+  padding: 64px
+  background: #FFFFFF
+  border-radius: 2px
+  box-sizing: border-box
+  .main_info
+    display: flex
+    flex-direction: column
+    width: 50%
+    .info_item
+      display: flex
+      align-items: center
+      a
+        color: #1D1D1C
+        text-decoration: underline
+      img
+        width: 32px
+        margin-right: 15px
+      &:not(:last-child)
+        margin-bottom: 35px
+  .feedback_form
+    width: 50%
+    display: flex
+    flex-direction: column
+    .director
+      display: flex
+      img
+        border-radius: 50%
+        width: 80px
+        margin-right: 16px
+      &__info
+        display: flex
+        flex-direction: column
+        .info_tag
+          margin-bottom: 8px
+          font-size: 12px
+          line-height: 15px
+          letter-spacing: 0.2px
+          text-transform: uppercase
+          color: #E40000
+        .info_name
+          font-weight: bold
+          font-size: 16px
+          line-height: 22px
+          letter-spacing: 0.01em
+          color: #000000
+        .info_work
+          font-size: 16px
+          line-height: 22px
+          letter-spacing: 0.01em
+          color: #000000
+    form
+      margin-top: 20px
+      input
+        width: 100%
+        padding: 14px 0
+        border: none
+        border-bottom: 1px solid #B7B7B7
+        margin-bottom: 20px
+      button
+        padding: 14px 40px
+        background: #E40000
+        color: #FFFFFF
+        border: none
+        outline: none
+        border-radius: 50px
+    
+.map_container
+  padding: 64px 0
+  h5
+    width: 100%
+    font-weight: 600
+    font-size: 22px
+    line-height: 27px
+    text-align: center
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: #1D1D1C
+
+.subscribe
+  & *
+    box-sizing: border-box
+  background: #E40000
+  padding-top: 56px
+  padding-bottom: 56px
+  .subscribe_container
+    display: flex
+    justify-content: space-between
+    h5
+      color: #FFFFFF
+      font-size: 22px
+      line-height: 27px
+      text-align: center
+      letter-spacing: 0.01em
+      text-transform: uppercase
+    form
+      display: flex
+      flex-grow: 1
+      margin-left: 72px
+      align-items: center
+      input
+        flex-grow: 1
+        padding: 14px 0
+        border: none
+        border-bottom: 2px solid #FFFFFF
+        color: #FFFFFF
+        background: transparent
+        &::placeholder
+          color: #FFFFFF
+          opacity: 0.5
+      button
+        margin-left: 50px
+        padding: 14px 40px
+        background: transparent
+        color: #FFFFFF
+        border: 2px solid #FFFFFF
+        box-sizing: border-box
+        outline: none
+        border-radius: 50px
+ 
 .maps
   iframe
-    width: 50vw
+    width: 100%
     margin-bottom: -3px
 .information
   display: flex
@@ -30,6 +169,7 @@
     margin-bottom: 31px
     max-width: 386px
     position: relative
+    color: #ffffff
   &__address
     &::before
       content: ''
@@ -72,7 +212,7 @@
     display: flex
     justify-content: space-around
 .director
-  margin-left: 88px
+  //margin-left: 88px
   &__img
     max-width: 198px
   &__name
@@ -119,3 +259,20 @@
       color: #E40000
     &--margin
       margin-top: 89px
+.icon_link
+  width: 32px
+  height: 32px
+  margin-right: 15px
+  position: relative
+  .icon_shadow
+    width: 32px
+    height: 32px
+    top: 0
+    left: 0
+    border-radius: 50%
+    background: rgba(255, 255, 255, 0.2)
+    position: absolute
+    display: none
+  &:hover
+    .icon_shadow
+      display: block

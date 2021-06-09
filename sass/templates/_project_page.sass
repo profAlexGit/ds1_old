@@ -1,0 +1,215 @@
+.project_page
+    .breadcrumbs
+        left: 0
+    & > img
+        height: auto
+    .container
+        position: relative
+        padding-bottom: 30px
+    .breadcrumbs
+        a
+            color: #1D1D1C
+    .about_content
+        display: flex
+        justify-content: space-between
+    .about_project
+        padding-top: 155px
+        h1
+            max-width: 50%
+            font-size: 1.8rem
+        h5
+            font-weight: 600
+            font-size: 22px
+            line-height: 27px
+            letter-spacing: 0.01em
+            text-transform: uppercase
+            color: #E40000
+            margin-top: 0
+        .about-description
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: 0.01em
+            color: #1D1D1C
+            p
+                margin-top: 0
+        .about-work
+            ul
+                list-style: none
+                padding-left: 0
+                li
+                    display: flex
+                    align-items: center
+                    img
+                        width: 24px
+                        margin-right: 20px
+                    &:not(:last-child)
+                        margin-bottom: 30px
+            .columns 
+                column-count: 2
+                page-break-inside: avoid
+                break-inside: avoid
+                li
+                    display: inline-flex
+                    width: 100%
+        .about-description
+            //justify-self: flex-start
+            width: 40%
+        .about-work
+            width: 50%
+    
+    .section
+        margin-top: 30px
+        h6
+            margin: 0
+            padding: 0
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: 0.01em
+            text-transform: uppercase
+            color: #1D1D1C
+        p
+            margin: 0
+            padding: 0
+            padding-bottom: 5px
+            font-size: 18px
+            line-height: 24px
+            letter-spacing: 0.01em
+            color: #1D1D1C
+        > div
+            //max-width: 50%
+            margin-top: 20px
+        img
+            max-width: 50%
+            border-radius: 2px
+            padding: 10px
+            box-sizing: border-box
+        .img_block-3
+            column-count: 3
+            column-gap: 10px
+            img
+                max-width: 30%
+    .section1
+        .img_block
+            display: flex
+            flex-wrap: wrap
+    .section2
+        display: flex
+        justify-content: space-between
+        align-items: center
+    
+    .reverse
+        flex-direction: row-reverse
+        img
+            box-sizing: border-box
+            padding: 20px
+    .section_photo
+        display: flex
+        justify-content: center
+        img
+            padding: 10px
+
+    .section_left-float
+        img
+            float: left
+    .section_right-float
+        img
+            float: right
+
+.cls 
+    clear: both
+
+.inDevelop
+    text-align: center
+
+.backLink_wrapper
+    display: flex
+    justify-content: flex-end
+    margin-top: 10px
+    a
+        display: flex
+        align-items: center
+        text-decoration: none
+        background: #E40000
+        padding: 10px 10px 10px 5px
+        padding: 13px 14px
+        box-sizing: border-box
+        border-radius: 18px
+        img
+            margin-right: 10px
+            width: 24px
+        span
+            text-transform: uppercase
+.main_gallery
+    .first_line, .second_line
+        display: flex
+        justify-content: space-between
+        overflow-x: auto
+        margin-bottom: 5px
+    .first_line
+        a
+            max-width: 50%
+            &:first-child
+                margin-right: 5px
+    .second_line
+        a
+            max-width: 33%
+            &:not(:last-child)
+                margin-right: 5px
+
+.columns_description
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+    font-size: 16px
+    line-height: 24px
+    div
+        max-width: 48%
+
+.subgallery
+    display: flex
+    justify-content: center
+    overflow: hidden
+    margin-bottom: 10px
+    a
+        max-width: 50%
+        &:not(:last-child)
+            margin-right: 5px
+
+.main_image
+    margin-bottom: 10px
+    a
+        display: block
+        max-width: 100%
+        margin: 0 auto
+        
+
+@media (max-width: 992px)
+    .project_page
+        .section
+            .img_block-3
+                column-count: 2
+                column-gap: 10px
+                img
+                    max-width: 45%
+
+@media (max-width: 645px)
+    .project_page
+        .about_content
+            flex-direction: column
+            .about-work
+                margin-bottom: 2rem
+
+@media (max-width: 460px)
+    .project_page
+        .section
+            .img_block-3
+                column-count: 1
+                column-gap: 10px
+                img
+                    margin: 0 auto
+                    max-width: 90%
+        .columns_description
+            flex-direction: column
+            div
+                max-width: 100%

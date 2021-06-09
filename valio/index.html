@@ -54,10 +54,10 @@
         <img src="../img/close.svg" alt="закрыть" class="nav-close">
       </div>
       <div class="link">
-        <a href="../brand/index.html" class="nav__link">о компании</a>
+        <a href="../brand/index.html" class="nav__link">о нас</a>
         <a href="../service/index.html" class="nav__link">услуги</a>
-        <a href="../contact/index.html" class="nav__link">контакты</a>
-        <a href="../portfolio/index.html" class="nav__link phone-portfolio">портфолио</a>
+        <a href="../portfolio/index.html" class="nav__link">портфолио</a>
+        <a href="../contact/index.html" class="nav__link">контакты</a>        
       </div>
       <div class="nav-description">
         <span class="nav-description__contact">Санкт-Петербург, Гражданская ул., 13-15, "Бертгольд центр"</span>
@@ -104,6 +104,13 @@
   </div>
 
   <section class="project">
+    <div class="breadcrumbs">
+      <a href="../index.html">Главная</a>
+      <span> / </span>
+      <a href="../portfolio/index.html">Портфолио</a>
+      <span> / </span>
+      <a href="./index.html" class="breadcrumbs-active">Valio</a>
+    </div>
     <div class="project-image project-image__hero" style="margin-top: 80px;">
       <img src="../img/test/размер1920х800.jpg" alt="">
     </div>
@@ -146,28 +153,45 @@
 
   <footer class="footer">
     <div class="footer__left">
-      <a href="../portfolio/index.html" class="footer__text">портфолио</a>
-      <a href="../brand/index.html" class="footer__text">о компании</a>
-      <a href="../service/index.html" class="footer__text">услуги</a>
-      <a href="../contact/index.html" class="footer__text">контакты</a>
+      <a href="portfolio/index.html" class="footer__text">портфолио</a>
+      <a href="brand/index.html" class="footer__text">о компании</a>
+      <a href="service/index.html" class="footer__text">услуги</a>
+      <a href="contact/index.html" class="footer__text">контакты</a>
     </div>
     <div class="footer__center">
-      <span class="footer__text">© DS1 Branding</span>
-      <div class="footer__social">
-        <a class="footer__social--img" href="https://www.instagram.com/dsone.ru/">
-          <img src="../img/inst.svg" alt="наш инстаграм">
-        </a>
-        <a class="footer__social--img" href="https://www.facebook.com/DS1-branding-105247674577335">
-          <img src="../img/facebook.svg" alt="наш фейсбук">
-        </a>
-        <a class="footer__social--img" href="https://www.behance.net/DS1_branding">
-          <img src="../img/be.svg" alt="наш беханс">
-        </a>
+      
+      <div class="footer__center__information">
+        <div class="footer__contacts">
+          <span class="footer__phone footer__text">+7 (812) 313-24-92</span>
+          <span class="footer__mail footer__text">sg@dsone.ru</span>
+          <div class="footer__social">
+            <a class="footer__social--img" href="https://www.facebook.com/DS1-branding-105247674577335">
+              <img src="../img/facebook.svg" alt="наш фейсбук">
+            </a>
+            <a class="footer__social--img" href="https://www.behance.net/DS1_branding">
+              <img src="../img/be.svg" alt="наш беханс">
+            </a>
+            <a class="footer__social--img" href="https://www.instagram.com/dsone.ru/ ">
+              <img src="../img/inst.svg" alt="наш инстаграм">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="footer__center__information__address footer__text">СПБ, Гражданская ул., 13-15, "Бертгольд центр"</span>
+          <span class="footer__center__information__address__shedule footer__text">09:00-18:00  / Пн-Пт</span>
+        </div>
+        
       </div>
+      <span class="footer__text-simple">© DS1 Branding</span>
     </div>
+
     <div class="footer__right footer__text">
-      <a href="tel:+78123132492">+7 (812) 313-24-92</a>
-      <a href="mailto:sg@dsone.ru">sg@dsone.ru</a>
+      <p class="footer__text">Новости студии</p>
+      <form action="">
+        <input type="email" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться на рассылку</button>
+      </form>
     </div>
   </footer>
 

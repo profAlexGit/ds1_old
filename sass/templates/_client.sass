@@ -1,7 +1,24 @@
+.our_clients
+  width: 100%
+  h2
+    font-weight: 800
+    font-size: 26px
+
 .client
   position: relative
   padding: 48px 0
   z-index: 1
+  &__showbtn
+    min-width: 205px
+    text-align: center
+    background: transparent
+    padding: 10px
+    font-size: 24px
+    color: black
+    border: 2px solid black
+    border-radius: 25px
+    &:hover
+      cursor: pointer
   &-content
     display: flex
     flex-direction: column
@@ -9,11 +26,63 @@
     width: 100%
     padding: 44px 0
     background: #ffffff
+    h2 
+      text-align: center
+    .client_description
+      margin-bottom: 30px
+      display: flex
+      justify-content: space-evenly
+      //padding: 0 100px
+      h3
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 26px
+        margin: 0
+      .client_logo
+        flex-shrink: 0
+        margin-right: 40px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+        img
+          width: 150px
+          height: auto
+          margin-right: 50px
+        span
+          font-weight: 600
+          font-size: 18px
+          line-height: 24px
+          color: #8C8C8C
+      p
+        font-size: 16px
+        line-height: 24px
+        color: #1D1D1C
+
+    .client-slider
+      display: flex
+      justify-content: space-evenly
+      flex-wrap: wrap
+      overflow: hidden
+      align-items: center
+      img
+        height: auto
+      .client-slide
+        width: 10%
+        display: none
+        &:nth-child(-n+8)
+          display: block
+      &-expanded
+        justify-content: center
+        .client-slide
+          display: block
+          margin-right: calc(20% / 8)
   &__description
     max-width: 880px
-    margin-top: 33px
     margin-bottom: 0
     color: #232323
   &-slide
     & div
       max-height: 200px
+    img
+      width: 80%

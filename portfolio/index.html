@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+  
   <link rel="stylesheet" href="../css/style.css">
   <title>Портфолио – брендинговое агентство DS1</title>
 </head>
@@ -56,8 +57,8 @@
       <div class="link">
         <a href="../brand/index.html" class="nav__link">о нас</a>
         <a href="../service/index.html" class="nav__link">услуги</a>
-        <a href="../contact/index.html" class="nav__link">контакты</a>
-        <a href="../portfolio/index.html" class="nav__link phone-portfolio">портфолио</a>
+        <a href="../portfolio/index.html" class="nav__link">портфолио</a>
+        <a href="../contact/index.html" class="nav__link">контакты</a>        
       </div>
       <div class="nav-description">
         <span class="nav-description__contact">Санкт-Петербург, Гражданская ул., 13-15, "Бертгольд центр"</span>
@@ -67,6 +68,7 @@
           <a href="mailto:sg@dsone.ru" class="nav-description__contact--mail">sg@dsone.ru</a>
         </span>
       </div>
+      
     </nav>
   </header>
   <button class="offer-button">Получить коммерческое предложение</button>
@@ -108,6 +110,11 @@
   <section class="portfolio">
     <div class="container">
       <h2 class="title portfolio__title">ПОРТФОЛИО</h2>
+      <div class="breadcrumbs">
+        <a href="../index.html">Главная</a>
+        <span> / </span>
+        <a href="./index.html" class="breadcrumbs-active">Портфолио</a>
+      </div>
       <div class="portfolio__button">
         <button class="portfolio__btn portfolio__btn--active" id="portfolio1">все проекты</button>
         <button class="portfolio__btn" id="portfolio2">ПО УСЛУГАМ</button>
@@ -115,33 +122,41 @@
       </div>
       <div class="category">
         <div class="category-service">
-          <div class="category__description"><a class="">бренд с нуля</a></div>
-          <div class="category__description"><a class="">ребрендинг</a></div>
-          <div class="category__description"><a class="">Дизайн упаковки</a></div>
-          <div class="category__description"><a class="">Адаптация на SKU</a></div>
-          <div class="category__description"><a class="">Рестайлинг</a></div>
-          <div class="category__description"><a class="">Вербальная айдентика</a></div>
-          <div class="category__description"><a class="">Key visual</a></div>
-          <div class="category__description"><a class="">Бренд-персонаж</a></div>
+          <button class="category__description filter_btn" data-service="zero_brand">бренд с нуля</button>
+          <button class="category__description filter_btn" data-service="rebrand">ребрендинг</button>
+          <button class="category__description filter_btn" data-service="package-design">Дизайн упаковки</button>
+          <button class="category__description filter_btn" data-service="sku">Адаптация на SKU</button>
+          <button class="category__description filter_btn" data-service="restyle">Рестайлинг</button>
+          <button class="category__description filter_btn" data-service="verbal">Вербальная айдентика</button>
+          <button class="category__description filter_btn" data-service="key-visual">Key visual</button>
+          <button class="category__description filter_btn" data-service="brand-character">Бренд-персонаж</button>
+          <button class="category__description filter_btn" data-service="promo-pack">промо-упаковка</button>
+          <button class="category__description filter_btn" data-service="redesign-pack">редизайн упаковки</button>
+          <button class="category__description filter_btn" data-service="photo">фотосессия</button>
+          <button class="category__description filter_btn" data-service="brand-book">бренд-бук</button>
         </div>
 
         <div class="category-grade">
-          <div class="category__description"><a class="">мясная продукция</a></div>
-          <div class="category__description"><a class="">кондитерские излелия</a></div>
-          <div class="category__description"><a class="">Для детей</a></div>
-          <div class="category__description"><a class="">напитки</a></div>
-          <div class="category__description"><a class="">бакалея</a></div>
-          <div class="category__description"><a class="">молочная продукция</a></div>
-          <div class="category__description"><a class="">хлебобулочные изделия</a></div>
-          <div class="category__description"><a class="">фармацевтика</a></div>
-          <div class="category__description"><a class="">NON Food</a></div>
-          <div class="category__description"><a class="">ctm</a></div>
+          <button class="category__description filter_btn" data-service="meet">мясная продукция</button>
+          <button class="category__description filter_btn" data-service="sweet">кондитерские излелия</button>
+          <button class="category__description filter_btn" data-service="chidren">Для детей</button>
+          <button class="category__description filter_btn" data-service="drink">напитки</button>
+          <button class="category__description filter_btn" data-service="bakaleya">бакалея</button>
+          <button class="category__description filter_btn" data-service="milk">молочная продукция</button>
+          <button class="category__description filter_btn" data-service="bread">хлебобулочные изделия</button>
+          <button class="category__description filter_btn" data-service="medicine">фармацевтика</button>
+          <button class="category__description filter_btn" data-service="no-food">NON Food</button>
+          <button class="category__description filter_btn" data-service="ctm">ctm</button>
         </div>
       </div>
-      <div class="project">
-        <a href="../valio/index.html" class="project__card">
+      <div id='portfolio-container' class="project grid">
+        <!-- <a href="../valio/index.html" class="project__card">
           <div class="work__card-img">
             <img src="../img/portfolio/2.gif" alt="валио">
+          </div>
+          <div class="project__card__description">
+            <h3>TEST</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis doloremque, optio a iure fuga, voluptatem iusto repellendus doloribus nulla quisquam reprehenderit! Incidunt atque modi, distinctio corporis ullam perferendis sapiente reprehenderit?</p>
           </div>
           <p class="work__card--desc nopc">СЫРЫ VALIO</p>
         </a>
@@ -222,17 +237,22 @@
             <img src="../img/portfolio/hero/hd.jpg" alt="проект хлебный дом">
           </div>
           <p class="work__card--desc nopc">батон Хлебный дом</p>
-        </a>
+        </a> -->
 
 
       </div>
 
-      <div class="onward more">
+      <button id="more_btn" class="onward more">
+        <img class="onward__img" src="../img/project/plus.svg" alt="еще больше проектов">
+        <span class="description onward__desc">больше проектов</span>
+      </button>
+
+      <!-- <div class="onward more">
         <a class="onward__img">
           <img src="../img/portfolio/onward.svg" alt="еще больше проектов">
         </a>
         <a class="description onward__desc">больше проектов</a>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -244,22 +264,39 @@
       <a href="../contact/index.html" class="footer__text">контакты</a>
     </div>
     <div class="footer__center">
-      <span class="footer__text">© DS1 Branding</span>
-      <div class="footer__social">
-        <a class="footer__social--img" href="https://www.instagram.com/dsone.ru/ ">
-          <img src="../img/inst.svg" alt="наш инстаграм">
-        </a>
-        <a class="footer__social--img" href="https://www.facebook.com/DS1-branding-105247674577335">
-          <img src="../img/facebook.svg" alt="наш фейсбук">
-        </a>
-        <a class="footer__social--img" href="https://www.behance.net/DS1_branding">
-          <img src="../img/be.svg" alt="наш беханс">
-        </a>
+      
+      <div class="footer__center__information">
+        <div class="footer__contacts">
+          <span class="footer__phone footer__text">+7 (812) 313-24-92</span>
+          <span class="footer__mail footer__text">sg@dsone.ru</span>
+          <div class="footer__social">
+            <a class="footer__social--img" href="https://www.facebook.com/DS1-branding-105247674577335">
+              <img src="../img/facebook.svg" alt="наш фейсбук">
+            </a>
+            <a class="footer__social--img" href="https://www.behance.net/DS1_branding">
+              <img src="../img/be.svg" alt="наш беханс">
+            </a>
+            <a class="footer__social--img" href="https://www.instagram.com/dsone.ru/ ">
+              <img src="../img/inst.svg" alt="наш инстаграм">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="footer__center__information__address footer__text">СПБ, Гражданская ул., 13-15, "Бертгольд центр"</span>
+          <!-- <span class="footer__center__information__address__shedule footer__text">09:00-18:00  / Пн-Пт</span> -->
+        </div>
+        
       </div>
+      <span class="footer__text-simple">© DS1 Branding</span>
     </div>
+
     <div class="footer__right footer__text">
-      <a href="tel:+78123132492">+7 (812) 313-24-92</a>
-      <a href="mailto:sg@dsone.ru">sg@dsone.ru</a>
+      <p class="footer__text">Новости студии</p>
+      <form action="">
+        <input type="email" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться на рассылку</button>
+      </form>
     </div>
   </footer>
 
@@ -278,9 +315,14 @@
       }
     }
 
+    let activeSubCategory = null;
+
+
     document.querySelector('#portfolio1').onclick = categoryNoActive;
     document.querySelector('#portfolio2').onclick = categoryActive1;
     document.querySelector('#portfolio3').onclick = categoryActive2;
+    generatePortfolio();
+    
 
     window.replainSettings = { id: '6f880235-5ae2-4425-85bc-b36f77d0cd9e' };
     (function (u) {

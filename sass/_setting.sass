@@ -2,12 +2,28 @@
   -webkit-locale: auto
 body
   box-sizing: content-box
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Montserrat', sans-serif !important
   font-size: 14px
   overflow-x: hidden
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  button
+    font-family: 'Montserrat', sans-serif !important
+  .breadcrumbs
+    position: absolute
+    z-index: 200
+    top: 110px
+    left: 30px
+    font-size: 1.1rem
+    opacity: 0.6
+    &-active
+      color: red !important
+      font-weight: bold
 .container
   width: 1170px
   max-width: 90%
+  margin: 0 auto
   &-flex
     display: flex
     justify-content: space-between
@@ -28,7 +44,7 @@ h2
   width: 50vw
   flex-basis: 50%
 .slider
-  width: 100%
+  width: 90%
   margin: 50px auto
 .slick
   &-slide
@@ -37,9 +53,15 @@ h2
     display: flex
     align-items: center
   &-prev
-    display: none
+    display: block
+    &:before
+      color: black
+      font-size: 30px
   &-next
-    display: none
+    display: block
+    &:before
+      color: black
+      font-size: 30px
 .notification
   display: none !important
 .offer

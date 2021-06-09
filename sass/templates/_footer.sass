@@ -1,12 +1,12 @@
 .footer
-  background: url('../img/background.jpg')
-  padding: 59px 5.8vw 59px 8vw
+  background: url('../img/background.jpg') no-repeat
+  background-size: 100% 100%
+  padding: 59px 5.8vw 40px 8vw
   display: flex
   justify-content: space-between
   z-index: 999
   position: relative
   &__left
-    height: 119px
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -15,26 +15,89 @@
     font-size: 16px
     letter-spacing: 0.04em
     color: #ffffff
-  &__social
-    display: flex
-    justify-content: space-between
-    align-items: flex-end
-    width: 109px
-    &--img
-      width: 20px
-      height: 25px
-      &:last-child
-        width: 24px
-        height: 25px
+    font-weight: 600
+    line-height: 20px
+    text-transform: capitalize
+  &__text-simple
+    font-size: 0.8rem
+    letter-spacing: 0.04em
+    color: #ffffff
+    line-height: 20px
+    text-transform: uppercase
   &__center
     display: flex
     align-items: center
     flex-direction: column
     justify-content: space-between
+    align-self: flex-end
+    margin-bottom: -20px
+    .footer__contacts
+      display: flex
+      align-items: center
+      margin-bottom: 16px
+      & > span
+        padding: 0 40px
+        padding-left: 0
+        font-size: 0.8rem
+        text-transform: lowercase
+        //border-right: 1px solid #FFFFFF
+      .footer__social
+        display: flex
+        padding-left: 40px
+        justify-content: space-between
+        align-items: flex-end
+        width: 109px
+        &--img
+          width: 20px
+          height: 25px
+          &:last-child
+            width: 24px
+            height: 25px
+    .footer__text-simple
+      text-transform: initial
+    &__information
+      display: flex
+      flex-grow: 1
+      flex-direction: column
+      color: #ffffff
+      text-align: center
+      margin-bottom: 10px
+      &__address
+        display: block
+        line-height: 28px
+        font-size: 0.8rem
+      &__address__shedule
+        line-height: 28px
+        font-size: 0.8rem
   &__right
     display: flex
     flex-direction: column
     align-items: flex-end
     z-index: 99999
+    p
+      align-self: flex-start
+      margin: 0
+    form
+      display: flex
+      flex-direction: column
+      margin-top: 35px
+      input
+        padding: 8px 4px
+        background: transparent
+        border: none
+        border-bottom: 1px solid #FFFFFF
+        margin-bottom: 24px
+        color: #FFFFFF
+      button
+        background: transparent
+        border: 2px solid #FFFFFF
+        outline: none
+        padding: 14px 18px
+        border-radius: 50px
+        color: #FFFFFF
+        //font-weight: 500
+        font-size: 14px
+        line-height: 17px
+        text-align: center
     a
       margin-bottom: 14px

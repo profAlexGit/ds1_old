@@ -19,9 +19,12 @@ header
       display: flex
       align-items: flex-end
       padding-left: 3vw
+      img
+        width: 24px
+        height: 24px
       &--img
         margin-right: 2vw
-        transition: 0.4s
+        transition: 0.4s        
         &:hover
           opacity: 0.5
     &__phone
@@ -40,15 +43,16 @@ header
     display: flex
     letter-spacing: 0.04em
     &__portfolio
-      padding-left: 2vw
+      padding-left: 2.5vw
       position: relative
       &::before
         content: ''
         position: absolute
         background: url("../img/icon-portfolio.svg") no-repeat
-        width: 16px
-        height: 16px
+        width: 24px
+        height: 24px
         left: 0
+        top: -4px
         transition: 0.7s
       &:hover
         &::before
@@ -82,12 +86,13 @@ header
     margin-left: 13vw
 .nav
   position: fixed
+  top: 50%
+  transform: translate(0,-50%)
   right: -673px
-  top: 0
-  height: 100vh
-  width: 583px
+  //height: 100vh
+  width: 400px
   background-color: rgba(228, 0, 0, 0.95)
-  padding: 28px 0 28px 54px
+  padding: 100px 0 28px 54px
   text-align: left
   display: flex
   flex-direction: column
@@ -95,21 +100,30 @@ header
   z-index: 9999999999999
   &-active
     display: flex
+    right: 0
   &-description
     display: flex
     flex-direction: column
     justify-content: space-between
-    height: 200px
+    height: auto
     line-height: 26px
     font-size: 16px
     font-weight: 600
     color: #ffffff
     max-width: 380px
+    span:not(:last-child)
+       margin-bottom: 0.5rem
     &__contact
       display: flex
       flex-direction: column
   &__link
     text-transform: uppercase
+  .link 
+    justify-content: flex-start
+    margin-bottom: 3rem
+    a
+      &:not(:last-child)
+        margin-bottom: 1rem
 .close
   width: 28px
   position: absolute
@@ -141,7 +155,7 @@ header
     font-weight: 600
     cursor: pointer
     transition: 0.4s
-    z-index: 999
+    z-index: 9999
     &:hover
       background: transparent
       color: #E40000
@@ -153,13 +167,13 @@ header
       margin-left: 8vw
 @media screen and (max-width: 1170px)
   .logo
-    min-width: 40vw
+    min-width: 39vw
     margin-left: -10vw
     &-img
       margin-left: 15vw
 @media screen and (max-width: 980px)
   .logo
-    min-width: 45vw
+    max-width: 40vw
     margin-left: -17vw
     &-img
       margin-left: 23vw
@@ -197,6 +211,10 @@ header
       margin-left: 200px
   .nav
     width: 100vw
+    height: 100vh
+    padding-top: 0
+    & .link 
+      height: auto
     &-description
       padding: 20px
       padding-right: 30px
